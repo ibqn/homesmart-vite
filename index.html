@@ -10,6 +10,70 @@
   <body
     class="mx-auto max-w-[2000px] bg-white text-neutral-900 dark:bg-neutral-800 dark:text-neutral-200"
   >
-    <div class="p-4 pt-2"></div>
+    <nav class="mx-auto bg-amber-400 p-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <a
+          class="z-50 rounded-sm ring-neutral-900 ring-offset-4 ring-offset-amber-400 transition-opacity hover:opacity-75 focus:outline-none focus-visible:ring-4 lg:absolute lg:left-1/2 lg:top-9 lg:-translate-x-1/2"
+          href="/"
+          area-label="Go to homepage"
+        >
+          <img
+            class="w-48 md:w-64 lg:w-72"
+            src="./assets/logo.svg"
+            alt="Home Smart Logo"
+          />
+        </a>
+        <button
+          class="rounded-sm text-neutral-900 ring-neutral-900 ring-offset-4 ring-offset-amber-400 transition-colors hover:text-neutral-600 focus:outline-none focus-visible:ring-4 lg:hidden"
+          id="menu"
+          area-expanded="false"
+          aria-level="Open Menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-8 w-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <div
+          role="menubar"
+          class="absolute right-0 left-0 top-16 hidden flex-col items-center gap-4 bg-amber-400 p-6 text-center text-lg shadow-xl lg:static lg:flex lg:w-full lg:flex-row lg:justify-between lg:shadow-none"
+        >
+          <a
+            role="menuitem"
+            class="rounded-sm py-1 px-6 capitalize ring-neutral-900 ring-offset-4 ring-offset-amber-400 transition-colors hover:text-neutral-600 focus:outline-none focus-visible:ring-4 dark:text-neutral-900"
+            href="/"
+            >home</a
+          >
+          <a
+            role="menuitem"
+            class="rounded-sm py-1 px-6 capitalize ring-neutral-900 ring-offset-4 ring-offset-amber-400 transition-colors hover:text-neutral-600 focus:outline-none focus-visible:ring-4 dark:text-neutral-900 lg:mr-auto"
+            href="/"
+            >contact</a
+          >
+          <a
+            role="menuitem"
+            class="rounded-sm py-1 px-6 capitalize ring-neutral-900 ring-offset-4 ring-offset-amber-400 transition-colors hover:text-neutral-600 focus:outline-none focus-visible:ring-4 dark:text-neutral-900"
+            href="/"
+            >login</a
+          >
+          <a
+            role="menuitem"
+            class="rounded-md bg-teal-900 py-2 px-6 capitalize text-white shadow-xl ring-neutral-900 ring-offset-4 ring-offset-amber-400 transition-shadow hover:shadow-none focus:outline-none focus-visible:ring-4"
+            href="/"
+            >sign up</a
+          >
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
