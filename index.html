@@ -46,7 +46,7 @@
         </button>
         <div
           role="menubar"
-          class="absolute right-0 left-0 top-16 hidden flex-col items-center gap-4 bg-amber-400 p-6 text-center text-lg shadow-xl lg:static lg:flex lg:w-full lg:flex-row lg:justify-between lg:shadow-none"
+          class="absolute right-0 left-0 top-16 z-40 hidden flex-col items-center gap-4 bg-amber-400 p-6 text-center text-lg shadow-xl lg:static lg:flex lg:w-full lg:flex-row lg:justify-between lg:shadow-none"
         >
           <a
             role="menuitem"
@@ -75,5 +75,22 @@
         </div>
       </div>
     </nav>
+    <header class="relative pt-16 md:pt-24 lg:pt-48">
+      <div
+        class="absolute inset-0 bottom-8 -z-10 bg-gradient-to-b from-amber-400 to-amber-600 md:bottom-24 xl:bottom-32"
+      ></div>
+      <div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+        <img
+          class="col-start-1 col-end-2 row-start-1 row-end-2 mx-auto"
+          src="./assets/couch.png"
+          alt="Couch"
+        />
+        <img
+          class="col-start-1 col-end-2 row-start-1 row-end-2 mx-auto w-40 sm:w-52 md:w-64 lg:w-72"
+          src="./assets/app.svg"
+          alt="App"
+        />
+      </div>
+    </header>
   </body>
 </html>
