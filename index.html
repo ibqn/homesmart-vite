@@ -46,7 +46,7 @@
         </button>
         <div
           role="menubar"
-          class="absolute right-0 left-0 top-16 z-40 hidden flex-col items-center gap-4 bg-amber-400 p-6 text-center text-lg shadow-xl lg:static lg:flex lg:w-full lg:flex-row lg:justify-between lg:shadow-none"
+          class="absolute right-0 left-0 top-16 z-40 flex h-0 flex-col items-center gap-4 overflow-hidden bg-amber-400 p-6 py-0 text-center text-lg shadow-xl transition-all ease-in-out lg:static lg:h-auto lg:w-full lg:flex-row lg:justify-between lg:py-6 lg:shadow-none"
         >
           <a
             role="menuitem"
@@ -97,7 +97,7 @@
     >
       <a
         href="#"
-        class="my-12 mx-auto flex gap-2 rounded-md bg-amber-400 py-2 px-6 capitalize shadow-xl ring-neutral-900 ring-offset-4 ring-offset-white transition-shadow hover:shadow-none focus:outline-none focus-visible:ring-4 dark:text-neutral-900 dark:ring-amber-400 dark:ring-offset-neutral-800"
+        class="my-12 mx-auto flex gap-2 rounded-md bg-amber-400 py-2 px-6 shadow-xl ring-neutral-900 ring-offset-4 ring-offset-white transition-shadow hover:shadow-none focus:outline-none focus-visible:ring-4 dark:text-neutral-900 dark:ring-amber-400 dark:ring-offset-neutral-800"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -254,6 +254,36 @@
             <img src="./assets/partner7.svg" alt="Partners" class="h-16 w-16" />
           </div>
         </div>
+      </section>
+
+      <section class="relative" aria-labelledby="home">
+        <div class="flex flex-wrap-reverse justify-center gap-8">
+          <div
+            class="flex flex-col flex-wrap items-start gap-6 lg:justify-center"
+          >
+            <div class="flex flex-col flex-wrap items-start gap-2">
+              <h2 id="home" class="text-4xl font-bold">Relax, you’re home!</h2>
+              <p class="max-w-md">
+                All our supported hardware includes traditional inputs so you
+                can integrate our products into your house in a way that’s best
+                for everyone.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="flex gap-2 rounded-md bg-amber-400 py-2 px-6 capitalize shadow-xl ring-neutral-900 ring-offset-4 ring-offset-white transition-shadow hover:shadow-none focus:outline-none focus-visible:ring-4 dark:text-neutral-900 dark:ring-amber-400 dark:ring-offset-neutral-800"
+            >
+              sign up
+            </a>
+          </div>
+          <img src="./assets/table.png" alt="Table" />
+        </div>
+        <div
+          class="absolute -bottom-6 -right-32 -z-10 aspect-square rounded-full border-amber-400 md:w-64 md:border-8 lg:w-96 xl:max-w-lg"
+        ></div>
+        <div
+          class="-bottom-8 -z-10 -mx-8 mt-12 h-24 w-screen bg-teal-900 xl:absolute xl:mt-0 xl:h-48"
+        ></div>
       </section>
     </main>
   </body>

@@ -13,14 +13,16 @@ window.addEventListener('resize', () => {
 
   if (window.innerWidth >= breakPoint) {
     navBtn.setAttribute('aria-expanded', false)
-    menuBar.classList.remove('flex')
-    menuBar.classList.add('hidden')
+    menuBar.classList.remove('h-auto', 'py-6')
+    menuBar.classList.add('h-0', 'py-0')
   }
 })
 
 navBtn.addEventListener('click', () => {
   const isExpanded = JSON.parse(navBtn.getAttribute('aria-expanded'))
   navBtn.setAttribute('aria-expanded', !isExpanded)
-  menuBar.classList.toggle('hidden')
-  menuBar.classList.toggle('flex')
+  menuBar.classList.toggle('h-auto')
+  menuBar.classList.toggle('py-6')
+  menuBar.classList.toggle('py-0')
+  menuBar.classList.toggle('h-0')
 })
