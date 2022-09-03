@@ -4,12 +4,12 @@ This is a vanillajs project with taildindcss based on vite.
 
 This project was created with `pnpm create vite`.
 
-## screenshots
+## Screenshots
 
-### Desktop
+### Desktop version
 
 ![desktop](./screenshots/desktop.png)
 
-### Desktop
+### Mobile version
 
 ![mobile](./screenshots/mobile.png)
